@@ -1,0 +1,168 @@
+/* Importando a fonte Minecraft */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Press Start 2P', sans-serif;
+    background: #f2f2f2; /* Fundo geral */
+}
+
+header {
+    background: url('./Vector (1).png') no-repeat center center;
+    background-size: cover; /* Para cobrir toda a área do header */
+    padding: 10px 0;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: flex-end; /* Itens da navegação no canto direito */
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-cart-icon {
+    width: 30px; /* Aumentado o tamanho do ícone do carrinho */
+    height: 30px;
+}
+
+/* Estilo principal para a página do carrinho */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    font-size: 25px; /* Aumentando o tamanho da escrita "Carrinho" */
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    width: 70%;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-image img {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.cart-item-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cart-item-description {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Quantidade de itens */
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item-quantity label {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Resumo do carrinho */
+.cart-summary {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.cart-summary .total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botão finalizar compra */
+.cart-summary button {
+    background-color: #4d2600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.cart-summary button:hover {
+    background-color: #331a00;
+}
+
+/* Footer da página */
+footer {
+    background-color: #3e2a1d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div {
+    color: white;
+    text-align: center;
+}
+
+footer div p {
+    margin: 0;
+    font-size: 12px;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones sociais */
+}
+
+footer .social-links a img {
+    width: 20px; /* Ajuste o tamanho dos ícones sociais */
+    height: 20px;
+}
