@@ -1,24 +1,23 @@
-/* Importando a fonte Minecraft */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Estilos gerais */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Press Start 2P', sans-serif;
-    background: #f2f2f2; /* Fundo geral */
+    background: #f2f2f2;
 }
 
 header {
-    background: url('./Vector (1).png') no-repeat center center;
-    background-size: cover; /* Para cobrir toda a área do header */
+    background: url('../imgs/head.png');
+    background-size: cover; 
     padding: 10px 0;
 }
 
 .navigation-container {
     display: flex;
-    justify-content: flex-end; /* Itens da navegação no canto direito */
+    justify-content: flex-end; 
     padding: 0 20px;
 }
 
@@ -36,11 +35,11 @@ header {
 }
 
 .nav-cart-icon {
-    width: 30px; /* Aumentado o tamanho do ícone do carrinho */
+    width: 30px; 
     height: 30px;
 }
 
-/* Estilo principal para a página do carrinho */
+
 main {
     display: flex;
     justify-content: space-between;
@@ -52,7 +51,7 @@ main {
 }
 
 .cart-title {
-    font-size: 25px; /* Aumentando o tamanho da escrita "Carrinho" */
+    font-size: 25px; 
     margin-bottom: 20px;
 }
 
@@ -90,7 +89,6 @@ main {
     margin-top: 5px;
 }
 
-/* Quantidade de itens */
 .item-quantity {
     display: flex;
     align-items: center;
@@ -101,7 +99,7 @@ main {
     font-size: 12px;
 }
 
-/* Resumo do carrinho */
+
 .cart-summary {
     width: 25%;
     background-color: #fff;
@@ -122,7 +120,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* Botão finalizar compra */
+
 .cart-summary button {
     background-color: #4d2600;
     color: white;
@@ -138,7 +136,6 @@ main {
     background-color: #331a00;
 }
 
-/* Footer da página */
 footer {
     background-color: #3e2a1d;
     padding: 20px;
@@ -159,10 +156,10 @@ footer div p {
 
 footer .social-links {
     display: flex;
-    gap: 10px; /* Espaçamento entre os ícones sociais */
+    gap: 10px; 
 }
 
 footer .social-links a img {
-    width: 20px; /* Ajuste o tamanho dos ícones sociais */
+    width: 20px; 
     height: 20px;
 }

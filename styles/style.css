@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Press Start 2P', cursive; 
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+header {
+    background: url('../imgs/head.png');
+    background-size: cover; 
+    padding: 10px 0;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-cart-icon {
+    width: 30px; 
+    height: 30px;
+}
+
+.slider-section {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.slider-banner {
+    background-image: url('../imgs/hq720.jpg');
+    height: 450px; /* Ajuste a altura conforme necessário */
+    background-size: auto; /* Ajuste para 'cover' para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destaque */
+    border-radius: 10px; /* Cantos arredondados */
+    margin-bottom: 20px; /* Espaço abaixo do banner */
+}
+
+.character-name,
+.character-price {
+    color: #333; 
+}
+
+.characters-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px; /* Espaço abaixo da seção de personagens */
+}
+
+.character {
+    border: 2px solid #4CAF50; 
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.buy-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    font-family: 'Press Start 2P', cursive;
+}
+
+.buy-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.about-us {
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+    padding: 40px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo da seção "Sobre Nós" */
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza a seção */
+    border: 2px solid #4CAF50; /* Borda verde */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.about-us-image {
+    width: 150px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.about-us-text {
+    flex: 1; /* Faz o texto ocupar o restante do espaço */
+}
+
+footer {
+    background: url('../imgs/head.png');
+    background-size: cover; 
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px; /* Espaço acima do rodapé */
+}

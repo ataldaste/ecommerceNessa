@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="cartStyles.css">
-    <!-- Adicionando Font Awesome para ícones -->
+    <link rel="stylesheet" href="../styles/cartStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfDOM9f3JHdH9S26bRIMTZXN/5M5b5E/AW2GH2hL+6QsVoGQd4YHy9n+YlF/yKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -13,9 +12,9 @@
         <nav>
             <div class="navigation-container">
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="../scripts/index.html">Home</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="carrinho.html"><img class="nav-cart-icon" src="noun-minecraft-chest-52011 2.png" alt="Carrinho"></a></li>
+                    <li><a href="carrinho.html"><img class="nav-cart-icon" src="../imgs/noun-minecraft-chest-52011 2.png" alt="Carrinho"></a></li>
                 </ul>
             </div>
         </nav>
@@ -29,7 +28,7 @@
                 <div class="item-details">
                     <h2 class="cart-item-title">Human</h2>
                     <p class="cart-item-description">Preço: R$ 100,00</p>
-                    <p>Descrição: O Human é a escolha perfeita para quem quer ser versátil em suas aventuras! Transforme-se no que quiser e conquiste o mundo!</p>
+                    <p>O Human é a escolha perfeita para quem quer ser versátil em suas aventuras! Transforme-se no que quiser e conquiste o mundo!</p>
                 </div>
                 <div class="item-quantity">
                     <label for="human-quantity">Quantidade:</label>
@@ -41,7 +40,7 @@
                 <div class="item-details">
                     <h2 class="cart-item-title">Rana</h2>
                     <p class="cart-item-description">Preço: R$ 150,00</p>
-                    <p>Descrição: Seja rápido como um raio! A Rana é ideal para quem busca aventuras aquáticas e agilidade em cada salto!</p>
+                    <p>Seja rápido como um raio! A Rana é ideal para quem busca aventuras aquáticas e agilidade em cada salto!</p>
                 </div>
                 <div class="item-quantity">
                     <label for="rana-quantity">Quantidade:</label>
@@ -53,7 +52,7 @@
                 <div class="item-details">
                     <h2 class="cart-item-title">Black Steve</h2>
                     <p class="cart-item-description">Preço: R$ 200,00</p>
-                    <p>Descrição: Black Steve é o clássico dos clássicos! Para quem não se contenta com menos que o melhor, ele é seu novo aliado!</p>
+                    <p>Black Steve é o clássico dos clássicos! Para quem não se contenta com menos que o melhor, ele é seu novo aliado!</p>
                 </div>
                 <div class="item-quantity">
                     <label for="black-steve-quantity">Quantidade:</label>
@@ -65,7 +64,7 @@
                 <div class="item-details">
                     <h2 class="cart-item-title">Beast Boy</h2>
                     <p class="cart-item-description">Preço: R$ 250,00</p>
-                    <p>Descrição: Com o Beast Boy, a força está do seu lado! Um verdadeiro guerreiro para quem não tem medo de encarar desafios!</p>
+                    <p>Com o Beast Boy, a força está do seu lado! Um verdadeiro guerreiro para quem não tem medo de encarar desafios!</p>
                 </div>
                 <div class="item-quantity">
                     <label for="beast-boy-quantity">Quantidade:</label>
@@ -90,7 +89,6 @@
     </footer>
 
     <script>
-        // Função para calcular o total
         function atualizarTotal() {
             const humanPrice = 100;
             const ranaPrice = 150;
@@ -110,7 +108,6 @@
             document.getElementById('total-price').innerText = `R$ ${total.toFixed(2)}`;
         }
 
-        // Chama a função ao carregar a página
         window.onload = atualizarTotal;
     </script>
 </body>

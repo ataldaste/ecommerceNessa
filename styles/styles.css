@@ -1,24 +1,24 @@
-/* Importando a fonte Minecraft */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Aplicando a fonte do Minecraft */
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Press Start 2P', sans-serif;
-    background: url('Vector.png');
+    background: url('../imgs/Vector.png');
 }
 
 header {
-    background: url('./Vector\ \(1\).png');
+    background: url('../imgs/head.png');
+    background-size: cover; 
     padding: 10px 0;
 }
 
 .navigation-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; 
     padding: 0 20px;
 }
 
@@ -33,22 +33,14 @@ header {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    display: flex;
-    align-items: center;
 }
 
-.nav-list li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo específico para o ícone do carrinho */
 .nav-cart-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
+    width: 30px; 
+    height: 30px;
 }
 
-/* Estilos compartilhados para formulários de login e cadastro */
+
 main {
     display: flex;
     justify-content: center;
@@ -57,11 +49,11 @@ main {
 }
 
 form {
-    background: url('./Vector\ \(2\).png');
+    background: url('../imgs/bckForm.png');
     padding: 40px;
     border-radius: 8px;
     text-align: center;
-    width: 360px; /* Ajustado para evitar que o formulário fique esticado */
+    width: 360px; 
     height: auto;
     display: flex;
     flex-direction: column;
@@ -101,6 +93,12 @@ button {
     width: 100%;
 }
 
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 button:hover {
     background-color: #331a00;
 }
@@ -116,10 +114,9 @@ button:hover {
 }
 
 .additional-links a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-/* Diferenciação de estilo para a tela de login e cadastro */
 #login-title {
     font-size: 24px;
     color: white;

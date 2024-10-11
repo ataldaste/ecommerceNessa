@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Site Minecraft</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation-container">
+                <ul class="nav-list">
+                    <li><a href="../scripts/index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="carrinho.html"><img class="nav-cart-icon" src="../imgs/noun-minecraft-chest-52011 2.png" alt="Carrinho"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider-section">
+            <div class="slider-banner">
+                <h2>Produtos em Promoção</h2>
+            </div>
+        </section>
+
+        <section class="featured-characters">
+            <h2>Personagens em Destaque</h2>
+            <div class="characters-container">
+                <div class="character">
+                    <img src="../imgs/creepernerd.png" alt="Creeper Nerd">
+                    <p class="character-name">Creeper Nerd</p>
+                    <p class="character-price">R$ 25,00</p>
+                    <button class="buy-button" onclick="addToCart('Creeper Nerd', 25)">Comprar</button>
+                </div>
+                <div class="character">
+                    <img src="../imgs/idk.png" alt="Ilusionista">
+                    <p class="character-name">Ilusionista</p>
+                    <p class="character-price">R$ 30,00</p>
+                    <button class="buy-button" onclick="addToCart('Ilusionista', 30)">Comprar</button>
+                </div>
+                <div class="character">
+                    <img src="../imgs/idk2.png" alt="Agente">
+                    <p class="character-name">Agente</p>
+                    <p class="character-price">R$ 20,00</p>
+                    <button class="buy-button" onclick="addToCart('Agente', 20)">Comprar</button>
+                </div>
+                <div class="character">
+                    <img src="../imgs/mutano.png" alt="Mutano">
+                    <p class="character-name">Mutano</p>
+                    <p class="character-price">R$ 35,00</p>
+                    <button class="buy-button" onclick="addToCart('Mutano', 35)">Comprar</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-us">
+            <div class="about-us-content">
+                <img src="../imgs/idk2.png" alt="Mob do Minecraft" class="about-us-image">
+                <div class="about-us-text">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Bem-vindo à nossa loja, onde trazemos os mobs mais inusitados e esquecidos do mundo do Minecraft diretamente para você! Aqui, você pode encontrar criaturas que foram descartadas em versões anteriores do jogo, mas que ainda têm muito a oferecer em aventuras e criações.
+                    </p>
+                    <p>
+                        Cada mob é único, com habilidades e características que podem dar um toque especial às suas construções. Se você é um verdadeiro entusiasta do Minecraft, não pode perder a oportunidade de adicionar esses mobs raros à sua coleção!
+                    </p>
+                    <p>
+                        Navegue por nossa seleção e descubra a magia dos mobs descartados. Não perca a chance de adquirir esses itens raros e exclusivos que podem transformar a sua experiência de jogo. Aumente seu poder, crie novas estratégias e leve suas aventuras a um novo patamar com nossos mobs!
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minecraft Themed Shop. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function addToCart(characterName, price) {
+            alert(`${characterName} foi adicionado ao carrinho por R$ ${price}.`);
+            window.location.href = 'carrinho.html';
+        }
+    </script>
+</body>
+</html>
